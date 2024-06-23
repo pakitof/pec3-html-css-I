@@ -26,13 +26,17 @@
     <header>
       <div class="encabezado">
         <div id="logo">
-          <img
-            src="../src/assets/images/logo.png?as=webp&width=200"
-            alt="logo Stopa"
-            width="200"
-            height="150"
-            loading="lazy"
-          />
+          <picture>
+            <source srcset="../src/assets/images/logo.webp" type="image/webp" />
+            <source srcset="../src/assets/images/logo.png" type="image/png" />
+            <img
+              src="../src/assets/images/logo.png"
+              alt="logo Stopa"
+              width="200"
+              height="150"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="titulo">
           <h1>FAN PAGE OFICIAL</h1>
