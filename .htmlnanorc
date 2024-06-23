@@ -1,0 +1,6 @@
+{
+  "minifySvg": false,
+  "collapseWhitespace": "conservative",
+  "removeComments": true,
+  "removeEmptyAttributes": true
+}
