@@ -1,0 +1,31 @@
+.contenedor-footer {
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.texto-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+
+    @media (max-width: 1050px) {
+        font-size: 5px;
+    }
+}
+
+.texto-footer > a {
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+
+    @media (max-width: 1050px) {
+        font-size: 5px;
+    }
+}
+.texto-footer > a:hover {
+    color: rgb(217, 217, 217);
+}
+footer {
+    display: flex;
+}

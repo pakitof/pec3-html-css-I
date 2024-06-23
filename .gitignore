@@ -1,0 +1,40 @@
+# Node.js dependencies
+/node_modules/
+
+# Parcel cache
+/.parcel-cache/
+
+# Output directory
+/dist/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sass cache
+.sass-cache/
+
+# Environment variables
+.env
+
+# Compiled CSS and JS
+assets/styles/*.css
+assets/scripts/*.js
+
+# Coverage directory used by tools like istanbul
+coverage/

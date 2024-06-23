@@ -1,0 +1,325 @@
+
+body{
+  min-height: 1000px;
+}
+ p.texto-footer {
+display: flex;
+flex-direction: column;
+}
+footer {
+display: flex;
+bottom: auto !important;
+}
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+.titulo{
+  color:white;
+  text-align: center;
+}
+nav.contenedor-menu {
+    background-color: black;
+}
+ul.menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+}
+.menu li>a{
+  color:white;
+}
+header {
+    background-color: black;
+}
+ul.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 5%;
+  font-size: 2rem;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+img.img-portada {
+  width: 100%;
+}
+.image-container {
+position: relative; /* Required for positioning the clip-path */
+width: 100%;
+height: 400px;
+}
+
+.image {
+position: absolute; /* Required for positioning the image */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+/* Initially hide the image using a large clip-path */
+clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+transition: clip-path 0.5s ease-in-out; /* Add a smooth transition */
+}
+
+.image-container:hover .image {
+/* Reveal the image on hover using a smaller clip-path */
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.image-container:active .image {
+/* Reveal the image instantly on click (active state) */
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+.contenido-detalle {
+    width: 100%;
+}
+h1.detalle-articulo-h1 {
+    text-align: center;
+}
+div#imagen1 {
+    width: 50%;
+    height: 500px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036_1280.jpg");
+}
+div#imagen2 {
+  width: 50%;
+  height: 500px;
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/05/05/17/concert-8676557_1280.jpg");
+}
+.imagenes{
+  display:flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        bottom: auto !important;
+        }
+  div#imagen1 {
+    width: 100%;
+    height: 500px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036_1280.jpg");
+}
+div#imagen2 {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/05/05/17/concert-8676557_1280.jpg");
+}
+.imagenes{
+  display:flex;
+  flex-direction: column;
+}
+}
+p.texto-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-principal-articulos {
+    display: flex;
+    column-gap: 1%;
+    width: 100%;
+    margin-top: 1%;
+}
+article{
+  width: 100%;
+}
+article img{
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+.contenedor-principal-articulos {
+    display: flex;
+    column-gap: 1%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1%;
+}
+}
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+  }
+  .titulo{
+    color:white;
+    text-align: center;
+  }
+  nav.contenedor-menu {
+      background-color: black;
+      padding: 1%;
+  }
+  ul.menu {
+      display: flex;
+      justify-content: center;
+      column-gap: 5%;
+      font-size: 1.5em;
+      text-transform: uppercase;
+  }
+  .menu li>a{
+    color:white;
+    text-decoration: none;
+  }
+  header {
+      background-color: black;
+  }
+  #logo {
+    animation: vibrate 1s ease-in-out infinite alternate;
+  }
+  .menu li :hover{
+  color:wheat;
+  }
+
+  @keyframes vibrate {
+    from { transform: translateY(0px); }
+    to { transform: translateY(5px); }
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    ul.menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      column-gap: 5%;
+      font-size: 2rem;
+      align-items: center;
+      text-transform: uppercase;
+      padding: 0;
+  }
+  .contenido-presentacion {
+      width: 100%;
+      padding: 1%;
+  }
+ 
+  }
+  .contenido-presentacion {
+      width: 100%;
+      padding: 1%;
+  }
+  img.presentacion-imagen {
+      max-width: 100%;
+  }
+  article.presentacion-articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  svg {
+  animation: vibrate 1s ease-in-out alternate infinite, rotate 2s linear infinite;
+}
+footer {
+    display: flex;
+}
+p.texto-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes vibrate {
+  from { transform: translateX(0px); }
+  to { transform: translateX(5px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+p.texto-footer {
+    display: flex;
+    flex-direction: column;
+}
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+  }
+  .titulo{
+    color:white;
+    text-align: center;
+  }
+  nav.contenedor-menu {
+      background-color: black;
+      padding: 1%;
+  }
+  ul.menu {
+      display: flex;
+      justify-content: center;
+      column-gap: 5%;
+      font-size: 1.5em;
+      text-transform: uppercase;
+  }
+  .menu li>a{
+    color:white;
+    text-decoration: none;
+  }
+  header {
+      background-color: black;
+  }
+  #logo {
+    animation: vibrate 1s ease-in-out infinite alternate;
+  }
+  .menu li :hover{
+  color:wheat;
+  }
+
+  @keyframes vibrate {
+    from { transform: translateY(0px); }
+    to { transform: translateY(5px); }
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    ul.menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      column-gap: 5%;
+      font-size: 2rem;
+      align-items: center;
+      text-transform: uppercase;
+      padding: 0;
+  }
+  .contenido-presentacion {
+      width: 100%;
+      padding: 1%;
+  }
+ 
+  }
+  .contenido-presentacion {
+      width: 100%;
+      padding: 1%;
+  }
+  img.presentacion-imagen {
+      max-width: 100%;
+  }
+  article.presentacion-articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  svg {
+  animation: vibrate 1s ease-in-out alternate infinite, rotate 2s linear infinite;
+}
+
+
+
+
+  
