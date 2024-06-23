@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../src/assets/styles/style.css"
-    />
-    <script src="./assets/scripts/enlace-activo.js"></script>
+    <script src="./assets/scripts/enlace-activo.js" defer></script>
     <!-- do not remove this line! -->
     <link
       rel="stylesheet"
@@ -23,23 +17,26 @@
     />
     <title>Stopa</title>
   </head>
-
   <body>
     <header>
       <div class="encabezado">
         <div id="logo">
-          <img
-            src="../src/assets/images/logo.png"
-            alt="logo Stopa"
-            width="200"
-            height="150"
-          />
+          <picture>
+            <source srcset="../src/assets/images/logo.webp" type="image/webp" />
+            <source srcset="../src/assets/images/logo.png" type="image/png" />
+            <img
+              src="../src/assets/images/logo.png"
+              alt="logo Stopa"
+              width="200"
+              height="150"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="titulo">
           <h1>CATEGORIA</h1>
         </div>
       </div>
-
       <nav class="contenedor-menu">
         <ul class="menu">
           <li class="menu-elemento menu-elemento-index">
@@ -60,11 +57,16 @@
 
     <div class="contenedor-principal-articulos">
       <article class="articulo">
-        <img
-          src="./assets/images/articulo-3.png"
-          class="articulo-img"
-          alt="Descripción de la imagen"
-        />
+        <picture>
+          <source srcset="./assets/images/articulo-3.webp" type="image/webp" />
+          <source srcset="./assets/images/articulo-3.png" type="image/png" />
+          <img
+            src="./assets/images/articulo-3.png"
+            class="articulo-img"
+            alt="Descripción de la imagen"
+            loading="lazy"
+          />
+        </picture>
         <div class="articulo-contenido">
           <p class="articulo-texto">
             Las entradas ya adquiridas serán válidas para las nuevas fechas*
@@ -72,48 +74,55 @@
             recinto, se devolverán todas las entradas. Una vez más, la pandemia
             global nos obliga a aplazar de...
           </p>
-
           <a href="./detalle.html" class="articulo-enlace">
-            <button class="articulo-btn">Detalle</button></a
-          >
+            <button class="articulo-btn">Detalle</button>
+          </a>
         </div>
       </article>
 
       <article class="articulo">
-        <img
-          src="./assets/images/articulo-2.jpg"
-          class="articulo-img"
-          alt="Descripción de la imagen"
-        />
+        <picture>
+          <source srcset="./assets/images/articulo-2.webp" type="image/webp" />
+          <source srcset="./assets/images/articulo-2.jpg" type="image/jpeg" />
+          <img
+            src="./assets/images/articulo-2.jpg"
+            class="articulo-img"
+            alt="Descripción de la imagen"
+            loading="lazy"
+          />
+        </picture>
         <div class="articulo-contenido">
           <p class="articulo-texto">
             Estopa da hoy pistoletazo de salida a su ‘Gira 25 Aniversario’ y lo
             hace en Latinoamérica. El próximo 11 de mayo hará lo propio en
             España en una de las giras más esperadas del año...
           </p>
-
-          <a href="#" class="articulo-enlace"
-            ><button class="articulo-btn">Detalle</button></a
-          >
+          <a href="#" class="articulo-enlace">
+            <button class="articulo-btn">Detalle</button>
+          </a>
         </div>
       </article>
 
       <article class="articulo">
-        <img
-          src="./assets/images/articulo-1.jpg"
-          class="articulo-img"
-          alt="Descripción de la imagen"
-        />
+        <picture>
+          <source srcset="./assets/images/articulo-1.webp" type="image/webp" />
+          <source srcset="./assets/images/articulo-1.jpg" type="image/jpeg" />
+          <img
+            src="./assets/images/articulo-1.jpg"
+            class="articulo-img"
+            alt="Descripción de la imagen"
+            loading="lazy"
+          />
+        </picture>
         <div class="articulo-contenido">
           <p class="articulo-texto">
             El pasado 15 de marzo, Estopa lo volvió a hacer y presentó un nuevo
             trabajo con 12 temas inéditos para recordar al panorama musical que
             25 años no son nada y que van a por...
           </p>
-
           <a href="#" class="articulo-enlace">
-            <button class="articulo-btn">Detalle</button></a
-          >
+            <button class="articulo-btn">Detalle</button>
+          </a>
         </div>
       </article>
     </div>
@@ -129,7 +138,17 @@
       "
     >
       <div class="footer-logo">
-        <img src="../src/assets/images/logo.png" alt="logo Stopa" width="200" />
+        <picture>
+          <source srcset="../src/assets/images/logo.webp" type="image/webp" />
+          <source srcset="../src/assets/images/logo.png" type="image/png" />
+          <img
+            src="../src/assets/images/logo.png"
+            alt="logo Stopa"
+            width="200"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="footer-menu">
         <ul class="menu">

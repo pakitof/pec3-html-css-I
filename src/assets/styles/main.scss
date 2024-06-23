@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+@import "layouts/variables";
 
 /**
  * Import npm dependencies
@@ -23,12 +23,12 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
 @import "layouts/menu";
-@import "layouts/footer";
 @import "layouts/article";
 @import "layouts/detalle";
 @import "layouts/presentacion";
-@import "layouts/enlaces"; /**
+@import "layouts/enlaces";
+@import "layouts/globales";
+/**
  * Do NOT include anything else in this file!
  */

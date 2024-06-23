@@ -1,67 +1,77 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <link rel="stylesheet" type="text/css" href="../src/assets/styles/style.css" />
-
     <script src="./assets/scripts/enlace-activo.js" defer></script>
     <!-- do not remove this line! -->
     <link
       rel="stylesheet"
       href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
-    <link rel="icon" href="../src/assets/images/favicon.ico" type="image/x-icon">
-
+    <link
+      rel="icon"
+      href="../src/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Stopa</title>
   </head>
-
   <body>
     <header>
       <div class="encabezado">
         <div id="logo">
-          <img src="../src/assets/images/logo.png" alt="logo Stopa" width="200" height="150">
+          <picture>
+            <source srcset="../src/assets/images/logo.webp" type="image/webp" />
+            <source srcset="../src/assets/images/logo.png" type="image/png" />
+            <img
+              src="../src/assets/images/logo.png"
+              alt="logo Stopa"
+              width="200"
+              height="150"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="titulo">
           <h1>DETALLES</h1>
         </div>
-    
-    
       </div>
-    
-    <nav class="contenedor-menu">
-      <ul class="menu">
-        <li class="menu-elemento menu-elemento-index">
-          <a href="index.html">Portada</a>
-        </li>
-        <li class="menu-elemento menu-elemento-categoria">
-          <a href="categoria.html">Categoría</a>
-        </li>
-        <li class="menu-elemento menu-elemento-presentacion">
-          <a href="presentacion.html">Presentación</a>
-        </li>
-        <li class="menu-elemento menu-elemento-enlaces">
-          <a href="enlaces.html">Enlaces</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="contenedor-menu">
+        <ul class="menu">
+          <li class="menu-elemento menu-elemento-index">
+            <a href="index.html">Portada</a>
+          </li>
+          <li class="menu-elemento menu-elemento-categoria">
+            <a href="categoria.html">Categoría</a>
+          </li>
+          <li class="menu-elemento menu-elemento-presentacion">
+            <a href="presentacion.html">Presentación</a>
+          </li>
+          <li class="menu-elemento menu-elemento-enlaces">
+            <a href="enlaces.html">Enlaces</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-   
 
     <div class="contenido-detalle">
       <article class="detalle-articulo">
         <h1 class="detalle-articulo-h1">
           Estopa aplaza su "gira fuego" a 2024
         </h1>
-        <img
-          src="./assets/images/articulo-3.png"
-          alt="articulo 3"
-          class="detalle-articulo-img" style="width: 100%;"     
-        />
-
-        <p class="detalle-articulo-parrafo" style="text-align: center;">
+        <picture>
+          <source srcset="./assets/images/articulo-3.webp" type="image/webp" />
+          <source srcset="./assets/images/articulo-3.png" type="image/png" />
+          <img
+            src="./assets/images/articulo-3.png"
+            alt="articulo 3"
+            class="detalle-articulo-img"
+            style="width: 100%"
+            loading="lazy"
+          />
+        </picture>
+        <p class="detalle-articulo-parrafo" style="text-align: center">
           Una vez más, la pandemia global nos obliga a aplazar de nuevo La Gira
           Fuego. Y hemos decidido que teniendo en cuenta la situación sanitaria
           actual, y las cambiantes medidas lo más sensato es aplazar todos los
@@ -69,9 +79,9 @@
           música, tales como Starlite, Stone & Music, Cap Roig y otros, que al
           ser en formato con asiento numerado donde cuyos festivales pueden
           seguir el protocolo de distanciamiento y seguridad exigido por las
-          autoridades, continúan en la misma fecha para esta año 2021.z
+          autoridades, continúan en la misma fecha para esta año 2021.
         </p>
-        <p class="detalle-articulo-parrafo" style="text-align: center;">
+        <p class="detalle-articulo-parrafo" style="text-align: center">
           Recordamos que las entradas adquiridas serán válidas para las nuevas
           fechas de 2022, pero la gente que quiera devolverlas estará en todo su
           derecho.
@@ -125,12 +135,31 @@
         </article>
       </div>
     </div>
-    <footer style="background-color: black; justify-content: space-around;align-items: center;display: flex; position: absolute; width: 100%; bottom: 0;">
-      <div class="footer-logo" >
-        <img src="../src/assets/images/logo.png" alt ="logo Stopa" width="200">
-    
+    <footer
+      style="
+        background-color: black;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      "
+    >
+      <div class="footer-logo">
+        <picture>
+          <source srcset="../src/assets/images/logo.webp" type="image/webp" />
+          <source srcset="../src/assets/images/logo.png" type="image/png" />
+          <img
+            src="../src/assets/images/logo.png"
+            alt="logo Stopa"
+            width="200"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
       </div>
-      <div class ="footer-menu">
+      <div class="footer-menu">
         <ul class="menu">
           <li class="menu-elemento menu-elemento-index">
             <a href="index.html">Portada</a>
@@ -149,9 +178,9 @@
       <p class="texto-footer">
         Copyright © 2023, <a href="#">Sony Music Entertainment España, S.L.</a>
         <a href="#">Reservados todos los derechos</a> |
-        <a href="#">Privacidad y cookies</a> | <a href="#">Condiciones generales</a>
+        <a href="#">Privacidad y cookies</a> |
+        <a href="#">Condiciones generales</a>
       </p>
     </footer>
- 
   </body>
 </html>
